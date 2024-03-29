@@ -4,7 +4,7 @@
     padding: 0;
   }
   
-  body {
+  body{
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     line-height: 1.5;
@@ -12,6 +12,7 @@
     color: rgb(0, 0, 0);
     background-size: cover;
     font-weight: 800;
+    overflow-x: hidden;
   }
   
   header{
@@ -302,7 +303,25 @@
     #sobre-mim p{
       display: flex;
       text-align: center;
-      width: 350px;
+      width: 300px;
+      padding-left: 90px;
+      text-indent: 0;
+    }
+  }
+
+  @media (max-width: 390px){
+    #sobre-mim p{
+      display: flex;
+      text-align: center;
+      width: 300px;
+      padding-left: 50px;
+      text-indent: 0;
+    }
+  }
+
+  @media (max-width: 390px){
+    .titulo-sobre{
+      padding-right: 40px;
     }
   }
 
@@ -312,5 +331,11 @@
       align-items: center;
       display: flex;
       flex-direction: column;
+    }
+  }
+
+  @media (max-width: 450px){
+    .texto-home{
+      padding-left: 10px;
     }
   }
