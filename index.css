@@ -81,7 +81,7 @@
   }
 
   .texto-home{
-    color: wheat; 
+    color: #d0d0d0;
   }
 
   .texto-home h1{
@@ -126,6 +126,10 @@
 
   /* SOBRE MIM */
   #sobre-mim{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 200px auto;
     width: 800px;
     padding-top: 100px;
@@ -133,22 +137,21 @@
 
   /* TÍTULO SOBRE MIM */
   #sobre-mim h1{
-    text-align: center; 
     margin-bottom: 30px; 
     font-size: 35px;
+    display: flex;
+    justify-content: center;
+    color: rgb(30, 125, 226);
   }
 
   /* TEXTO SOBRE MIM */
   #sobre-mim p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 20px; 
-    color: wheat;
+    color: #d0d0d0;
     text-indent: 60px;
-  }
-  
-  /* TÍTULO SOBRE MIM */
-  .titulo-sobre{
-    font-size: 50px;
-    color: rgb(30, 125, 226);
   }
 
   /* HABILIDADES */
@@ -165,7 +168,7 @@
     text-align: center; 
     margin-bottom: 30px; 
     font-size: 50px;
-    color: wheat;
+    color: #d0d0d0;
   }
 
   /* ICONES DE LINGUAGENS 1 BLOCO */
@@ -307,21 +310,14 @@
   }
 
   @media (max-width: 420px){
-    #sobre-mim p{
-      display: flex;
-      text-align: center;
-      width: 300px;
-      padding-left: 100px;
-      text-indent: 0;
+    #sobre-mim{
+      width: 250px;
     }
-  }
-
-  @media (max-width: 390px){
+    
     #sobre-mim p{
       display: flex;
       text-align: center;
       width: 300px;
-      padding-left: 50px;
       text-indent: 0;
     }
   }
@@ -338,14 +334,5 @@
   @media (max-width: 450px){
     .texto-home{
       padding-left: 10px;
-    }
-  }
-
-  @media (max-width: 412px){
-    .titulo-sobre{
-      max-width: 90%;
-      margin: 0 auto; 
-      text-align: center;
-      padding-right: 50px;
     }
   }
